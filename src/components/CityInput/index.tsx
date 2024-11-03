@@ -12,6 +12,7 @@ export function CityInput({ value, onChange }: CityInputProps) {
     <S.Container>
       <S.InputContainer>
         <S.Input
+          testID="search-input"
           placeholder="Pesquise sua cidade"
           placeholderTextColor={theme.COLORS.GREY400}
           onChangeText={onChange}

@@ -73,7 +73,7 @@ export function Home() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <S.Container>
-        <S.InputContainer>
+        <S.InputContainer testID="home-input-container">
           <CityInput
             value={citySearch}
             onChange={setCitySearch}
@@ -85,11 +85,11 @@ export function Home() {
           />
         </S.InputContainer>
 
-        <S.CurrentWeatherContainer>
+        <S.CurrentWeatherContainer testID="home-current-weather-container">
           <CurrentWeather city={city} />
         </S.CurrentWeatherContainer>
 
-        <S.DaysContainer>
+        <S.DaysContainer testID="home-days-container">
           <S.WeatherDaysList
             data={city.forecast.forecastday}
             ItemSeparatorComponent={S.Separator}

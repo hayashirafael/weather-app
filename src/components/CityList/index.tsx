@@ -13,7 +13,7 @@ export function CityList({ data, value, onPress }: CityListProps) {
   const theme = useTheme();
   if (!value) return;
   return (
-    <S.OptionsContainer>
+    <S.OptionsContainer testID="city-list-container">
       <S.CityList
         data={data}
         ItemSeparatorComponent={S.ItemSeparator}
